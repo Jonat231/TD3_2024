@@ -81,6 +81,9 @@ Blinky blinky3;
 
 void setup() 
 { 
+
+  Serial.begin(115200);
+  Serial.println("Testing serial...");
   //  blinky:: init( 2 , 250 ); // enciendo el led del puerto 2 cada 20 ms
     blinky1.init(2,1000);
     blinky2.init(5,500);
